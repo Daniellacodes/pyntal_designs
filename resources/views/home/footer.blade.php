@@ -4,7 +4,7 @@
                <div class="col-md-4">
                    <div class="full">
                       <div class="logo_footer">
-                        <a href="#"><img width="210" src="images/logo.png" alt="#" /></a>
+                        <a href="#"><img width="210" src="images/pyntallogo1.png" alt="#" /></a>
                       </div>
                       <div class="information_f">
                         <p><strong>ADDRESS:</strong> Kilimani next to Yaya Center</p>
@@ -22,11 +22,11 @@
                         <h3>Menu</h3>
                         <ul>
                            <li><a href="#">Home</a></li>
-                           <li><a href="#">About</a></li>
-                           <li><a href="#">Services</a></li>
-                           <li><a href="#">Testimonial</a></li>
-                           <li><a href="#">Blog</a></li>
+                           <li><a href="#">Product</a></li>
                            <li><a href="#">Contact</a></li>
+                           <li><a href="{{url('show_cart')}}">Cart</a></li>
+                           <li><a href="{{url('show_order')}}">Order</a></li>
+                           
                         </ul>
                      </div>
                   </div>
@@ -42,7 +42,7 @@
                               <fieldset>
                                  <div class="field">
                                     <input type="email" placeholder="Enter Your Mail" name="email" />
-                                    <input type="submit" value="Subscribe" />
+                                    <input style="background-color: black;border: 1px solid #f7e544;color: #ffffff;"  type="submit" value="Subscribe" />
                                  </div>
                               </fieldset>
                            </form>

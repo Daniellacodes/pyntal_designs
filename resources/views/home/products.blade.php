@@ -11,7 +11,7 @@
 
                @csrf
                   <input style="width: 500px;" type="text" name="search" placeholder="Search for product">
-                  <input type="submit" value="search">
+                  <input  style="background-color: black;border: 1px solid #f7e544;color: #ffffff;"  type="submit" value="search">
                </form>
                </div>
 
@@ -33,7 +33,7 @@
                               <input type="number" name="quantity" value="1" min="1" style="width: 100px ">
                                  </div>
                                  <div class="col-md-4">
-                              <input type="submit" value="Add To Cart">
+                              <input style="background-color: #0505056b;border: 1px solid #f7e544;color: #ffffff;"  type="submit" value="Add To Cart">
                                  </div>
                               </div>
                            </form>
@@ -44,7 +44,12 @@
                      <div class="img-box">
                         <img src="product/{{$products->image}}" alt="">
                      </div>
-                     <div class="detail-box">
+                     
+
+                        
+                     
+                  </div>
+                  <div class="detail-box">
                         <h5>
                            {{$products->title}}
                         </h5>
@@ -70,8 +75,9 @@
                         </h6>
 
                         @endif
+
+                        
                      </div>
-                  </div>
                </div>
               
             @endforeach

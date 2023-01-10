@@ -1,7 +1,7 @@
 <header class="header_section">
             <div class="container">
                <nav class="navbar navbar-expand-lg custom_nav-container ">
-                  <a class="navbar-brand" href="{{url('/')}}"><img width="250" height="50" src="images/pyntallogo1.jpeg" alt="#" /></a>
+                  <a class="navbar-brand" href="{{url('/')}}"><img width="250" height="50" src="images/pyntallogo1.png" alt="#" /></a>
                   <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                   <span class=""> </span>
                   </button>
@@ -43,11 +43,11 @@
                         @else
 
                         <li class="nav-item">
-                           <a class="btn btn-primary" id="logincss" href="{{ route('login') }}">Login</a>
+                           <a style="background-color: black;border: 2px solid #f7e544;color: #ffffff;"  class="btn btn-primary" id="logincss" href="{{ route('login') }}">Login</a>
                         </li>
 
                         <li class="nav-item">
-                           <a class="btn btn-success" href="{{ route('register') }}">Register</a>
+                           <a style="background-color: grey;border: 2px solid #f7e544;color: #ffffff;"  class="btn btn-success" href="{{ route('register') }}">Register</a>
                         </li>
                         @endauth
 

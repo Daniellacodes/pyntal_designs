@@ -161,6 +161,7 @@ a:focus {
     -webkit-transition: all 0.3s;
     transition: all 0.3s;
     font-weight: 700;
+    font-family: 'Cormorant', serif;
 }
 
 .custom_nav-container .navbar-nav .nav-item .nav-link svg {
@@ -171,11 +172,11 @@ a:focus {
 }
 
 .custom_nav-container .navbar-nav .nav-item:hover .nav-link, .custom_nav-container .navbar-nav .nav-item.active .nav-link {
-  color: #f7444e;
+  color: #f7be44;
 }
 
 .custom_nav-container .navbar-nav .nav-item:hover .nav-link svg, .custom_nav-container .navbar-nav .nav-item.active .nav-link svg {
-  fill: #f7444e;
+  fill: #f7be44;
 }
 
 .custom_nav-container .nav_search-btn {
@@ -296,8 +297,8 @@ a:focus {
 .slider_section .detail-box a {
     display: inline-block;
     padding: 12px 45px;
-    background-color:#000000;
-    border: 1px solid #f7be44;
+    background-color: #0505056b;
+  border: 1px solid #f7e544;
     color: #ffffff;
     border-radius: 0;
     -webkit-transition: all 0.3s;
@@ -389,8 +390,8 @@ a:focus {
 }
 
 .product_section .box .img-box img {
-  max-width: 100%;
-  max-height: 160px;
+  max-width: 300%;
+  max-height: 380px;
   -webkit-transition: all .3s;
   transition: all .3s;
 }
@@ -427,9 +428,7 @@ a:focus {
   -webkit-transform: translateY(0);
           transform: translateY(0);
 }
-.arrival_section {
-    background-color: #d4ced0;
-}
+
 .product_section .option_container {
   position: absolute;
   top: 0;
@@ -445,7 +444,7 @@ a:focus {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  background-color: rgba(255, 255, 255, 0.6);
+  background-color: rgba(255, 255, 255, 0.315);
   z-index: 3;
   opacity: 0;
   visibility: hidden;
@@ -480,14 +479,14 @@ a:focus {
 }
 
 .product_section .options .option1 {
-  background-color: #f7444e;
-  border: 1px solid #f7444e;
+  background-color: #0505056b;
+  border: 1px solid #f7e544;
   color: #ffffff;
 }
 
 .product_section .options .option1:hover {
   background-color: transparent;
-  color: #f7444e;
+  color: #0a0a0a;
 }
 
 .product_section .options .option2 {
@@ -528,13 +527,15 @@ a:focus {
 }
 
 .arrival_section .heading_container {
-  color: #002c3e;
+  color: #000000;
   margin-bottom: 10px;
 }
 
 .arrival_section .box {
-  padding: 120px 45px;
+  padding: 120px 3px;
   position: relative;
+  background-color: #eee1bc;
+ 
 }
 
 .arrival_section .arrival_bg_box {
@@ -544,6 +545,8 @@ a:focus {
     width: 100%;
     height: 100%;
     z-index: 3;
+    
+    
 }
 
 .arrival_section .arrival_bg_box img {
@@ -553,17 +556,20 @@ a:focus {
     object-fit: cover;
     -o-object-position: top left;
     object-position: top left;
+    
+    
 }
 
 .arrival_section a {
   display: inline-block;
   padding: 10px 45px;
-  background-color: #f7444e;
-  border: 1px solid #f7444e;
+  background-color: #000000;
+  border: 1px solid #f7be44;
   color: #ffffff;
   border-radius: 0;
   -webkit-transition: all 0.3s;
   transition: all 0.3s;
+  
 }
 
 .arrival_section a:hover {
@@ -574,10 +580,11 @@ a:focus {
 .why_section .box {
     text-align: center;
     margin-top: 45px;
-    background-color: #002c3e;
+    background-color: #000000;
     padding: 45px 50px;
     border-radius: 5px;
     color: #ffffff;
+    font-family: 'Cormorant', serif;
 }
 
 .detail-box h5 {
@@ -604,7 +611,7 @@ a:focus {
 }
 
 .subscribe_section .box {
-  background-color: #d4ced0;
+  background-color: #eee1bc;
   padding: 75px 45px;
 }
 
@@ -612,7 +619,7 @@ a:focus {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  color: #002c3e;
+  color: #000000;
 }
 
 .subscribe_section .subscribe_form .heading_container h2 {
@@ -645,26 +652,26 @@ a:focus {
 }
 
 .subscribe_section .subscribe_form form input::-webkit-input-placeholder {
-  color: #171620;
+  color: #000000;
 }
 
 .subscribe_section .subscribe_form form input:-ms-input-placeholder {
-  color: #171620;
+  color: #000000;
 }
 
 .subscribe_section .subscribe_form form input::-ms-input-placeholder {
-  color: #171620;
+  color: #000000;
 }
 
 .subscribe_section .subscribe_form form input::placeholder {
-  color: #171620;
+  color: #000000;
 }
 
 .subscribe_section .subscribe_form form button {
   display: inline-block;
   padding: 10px 45px;
-  background-color: #f7444e;
-  border: 1px solid #f7444e;
+  background-color: #000000;
+  border: 1px solid #f7be44;
   color: #ffffff;
   border-radius: 35px;
   -webkit-transition: all 0.3s;
@@ -678,7 +685,7 @@ a:focus {
 
 .subscribe_section .subscribe_form form button:hover {
   background-color: transparent;
-  color: #f7444e;
+  color: #000000;
 }
 
 .client_section .box {
@@ -775,13 +782,13 @@ a:focus {
   height: 50px;
   opacity: 1;
   color: #ffffff;
-  background-color: #f7444e;
+  background-color: #000000;
   border-radius: 100%;
 }
 
 .client_section .carousel-control-prev:hover,
 .client_section .carousel-control-next:hover {
-  background-color: #212121;
+  background-color: #dba614;
 }
 
 .client_section .carousel-control-prev {
@@ -794,7 +801,7 @@ a:focus {
 
 /* footer section*/
 .footer_section {
-  background-color: #002c3e;
+  background-color: #000000;
   color: #ffffff;
   padding-top: 70px;
 }
@@ -840,7 +847,7 @@ a:focus {
 }
 
 .footer_section .footer_contact .contact_link_box a:hover {
-  color: #f7444e;
+  color: #000000;
 }
 
 .footer_section .footer-logo {
@@ -871,7 +878,7 @@ a:focus {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  color: #002c3e;
+  color: #000000;
   width: 30px;
   height: 30px;
   border-radius: 100%;
@@ -882,7 +889,7 @@ a:focus {
 }
 
 .footer_section .footer_social a:hover {
-  color: #f7444e;
+  color: #000000;
 }
 
 .footer_section .map_container {
@@ -917,7 +924,7 @@ a:focus {
     color: #ffffff;
     margin: 0;
     padding: 20px 0;
-    border-top: 1px solid rgba(255,255,255,0.2);
+    border-top: 1px solid rgba(107, 103, 103, 0.2);
 }
 
 .footer_section .footer-info p a {
@@ -964,7 +971,7 @@ li.nav-item ul li a:hover, li.nav-item ul li a:focus {
 }
 
 .inner_page_head {
-    background: #f7444e;
+    background: #000000;
     text-align: center;
     color: #fff;
     padding-top: 50px;
@@ -979,7 +986,7 @@ li.nav-item ul li a:hover, li.nav-item ul li a:focus {
 /** footer **/
 
 footer {
-    background: #f8f8f8;
+    
     padding: 90px 0 70px;
 }
 
