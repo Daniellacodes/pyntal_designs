@@ -11,7 +11,7 @@
       <meta name="description" content="" />
       <meta name="author" content="" />
       <link rel="shortcut icon" href="images/favicon.png" type="">
-      <title>Famms - Fashion HTML Template</title>
+      <title>Pyntal Designs</title>
       <!-- bootstrap core css -->
       <link rel="stylesheet" type="text/css" href="home/css/bootstrap.css" />
       <!-- font awesome style -->
@@ -20,8 +20,13 @@
       <link href="home/css/style.css" rel="stylesheet" />
       <!-- responsive style -->
       <link href="home/css/responsive.css" rel="stylesheet" />
+
+      <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Cormorant:wght@300&display=swap" rel="stylesheet">
    </head>
    <body>
+
+   @include('sweetalert::alert')
+
       <div class="hero_area">
          <!-- header section strats -->
         @include('home.header')
@@ -42,6 +47,8 @@
         @include('home.products')
       <!-- end product section -->
 
+      
+
       <!-- subscribe section -->
         @include('home.subscribe')
       <!-- end subscribe section -->
@@ -58,6 +65,22 @@
          
          </p>
       </div>
+
+     
+
+      </script>
+
+      <script>
+         document.addEventListener("DOMContentLoaded", function(event)
+         {
+            var scrollpos = localStorage.getItem('scrollpos');
+            if(scrollpos) window.scrollTo(0, scrollpos);
+         });
+         window.onbeforeunload = function(e)
+         {
+            localStorage.setItem('scrollpos', window.scrollY);
+         };
+         </script>
       <!-- jQery -->
       <script src="home/js/jquery-3.4.1.min.js"></script>
       <!-- popper js -->

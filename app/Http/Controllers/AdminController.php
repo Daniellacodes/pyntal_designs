@@ -6,13 +6,17 @@ use Illuminate\Http\Request;
 use App\Models\Category;
 use App\Models\Product;
 use App\Models\Order;
+use PDF;
+use Notification;
+use App\Notifications\FirstNotification;
 
 
 class AdminController extends Controller
 {
     public function view_category()
     {
-        return view('admin.category');
+        $data=category::all();
+        return view('admin.category',compact('data'));
     }
 
     public function add_category(Request $request)
@@ -26,10 +30,20 @@ class AdminController extends Controller
        
     }
 
+    public function delete_category($id)
+    {
+        $data=category::find($id);
+        $data->delete();
+
+        return redirect()->back()->with('message','Category deleted');
+
+    }
+
     public function view_product()
     {
+        $category=category::all();
         
-        return view('admin.product');
+        return view('admin.product',compact('category'));
     }
 
     public function add_product(Request $request)
@@ -40,6 +54,7 @@ class AdminController extends Controller
         $product->price=$request->price;
         $product->quantity=$request->quantity;
         $product->discount_price=$request->dis_price;
+        $product->category=$request->category;
 
         $image=$request->image;
         $imagename=time().'.'.$image->getClientOriginalExtension(); //giving image unique name using the time function
@@ -70,7 +85,8 @@ class AdminController extends Controller
 
     {
         $product=product::find($id);
-        return view('admin.update_product',compact('product'));
+        $category=category::all();
+        return view('admin.update_product',compact('product','category'));
     }
 
     public function update_product_confirm(Request $request,$id)
@@ -81,6 +97,7 @@ class AdminController extends Controller
         $product->price=$request->price;
         $product->quantity=$request->quantity;
         $product->discount_price=$request->dis_price;
+        $product->category=$request->category;
 
         $image=$request->image;
         if($image)
@@ -102,6 +119,65 @@ class AdminController extends Controller
 
         return view('admin.order',compact('order'));
     }
+
+    public function delivered($id)
+    {
+        $order=order::find($id);
+        $order->delivery_status="delivered";
+        $order->payment_status='Paid';
+
+        $order->save();
+
+        return redirect()->back();
+    }
+
+
+    public function print_pdf($id)
+    {
+        $order=order::find($id);
+        $pdf=PDF::loadView('admin.pdf',compact('order'));
+        return $pdf->download('order_details.pdf');
+
+
+    }
+
+
+    public function send_email($id)
+    {
+        $order=order::find($id);
+        return view('admin.email_info',compact('order'));
+
+    }
+
+    public function send_user_email(Request $request,$id)
+    {
+        $order=order::find($id);
+        $details = [
+
+            'greeting'=>$request->greeting,
+            'firstline'=>$request->firstline,
+            'body'=>$request->body,
+            'button'=>$request->button,
+            'url'=>$request->url,
+            'lastline'=>$request->lastline,
+
+
+        ];
+
+        Notification::send($order,new FirstNotification($details));
+        return redirect()->back();
+
+    }
+
+    public function searchdata(Request $request)
+    {
+
+        $searchText=$request->search;
+        $order=order::where('name','LIKE',"%$searchText%")->orWhere('phone','LIKE',"%$searchText%")->orWhere('product_title','LIKE',"%$searchText%")->get();
+
+        return view('admin.order',compact('order'));
+    }
+
 
 
 }

@@ -92,12 +92,23 @@
                  </div>
 
                  <div class="div_design">
+                <label>Product Category </label>
+                <select class="text_color" name="category" required="">
+                  <option value="" selected="">Add a Category</option>
+
+                  @foreach($category as $category)
+                  <option value="{{$category->category_name}}">{{$category->category_name}}</option>
+                  @endforeach
+                </select>
+                 </div>
+
+                 <div class="div_design">
                 <label>Product Image</label>
                 <input  type="file" name="image" required="">
                  </div>
 
                  <div class="div_design">
-                <input  type="submit" value="Done" class="btn btn-primary">
+                <input  type="submit" value="Done" class="btn btn-warning">
                  </div>
 
                    </form>

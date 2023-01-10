@@ -93,6 +93,18 @@
                  </div>
 
                  <div class="div_design">
+                <label>Product Category </label>
+                <select class="text_color" name="category" required="">
+                  <option value="{{$product->category}}" selected="">{{$product->category}}</option>
+
+                  @foreach($category as $category)
+                  <option value="{{$category->category_name}}">{{$category->category_name}}</option>
+                  @endforeach
+                  
+                </select>
+                 </div>
+
+                 <div class="div_design">
                 <label>Current Product Image</label>
                 <img style="margin:auto;" height="100" width="100" src="/product/{{$product->image}}">
                  </div>

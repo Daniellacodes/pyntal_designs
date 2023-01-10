@@ -3,7 +3,7 @@
   <head>
     <!-- Required meta tags -->
     @include('admin.css')
-    < </head>
+     </head>
   <body>
     <div class="container-scroller">
       <!-- partial:partials/_sidebar.html -->

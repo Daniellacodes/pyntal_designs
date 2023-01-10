@@ -5,7 +5,7 @@
     @include('admin.css')
     < </head>
     <style type="text/css">
-        .div_centre
+        .div_center
 
         {
             text-align: center;
@@ -20,6 +20,14 @@
         .input_color
          {
             color: black;
+        }
+        .center
+        {
+          margin: auto;
+          width: 50%;
+          text-align: center;
+          margin-top: 30px;
+          border:3px solid yellow;
         }
 
     </style>
@@ -51,6 +59,24 @@
 
 
           </div>
+
+          <table class="center">
+            <tr>
+              <td>Category Name</td>
+              <td>Action</td>
+              
+            </tr>
+
+            @foreach($data as $data)
+
+            <tr>
+              <td>{{$data->category_name}}</td>
+              <td>
+                <a onclick="return confirm('Are you sure you want to delete this Category?')" class= "btn btn-warning" href="{{url('delete_category',$data->id)}}">Delete</a>
+              </td>
+            </tr>
+            @endforeach
+          </table>
 
 
            </div>
