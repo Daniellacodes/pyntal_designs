@@ -22,9 +22,7 @@
       <link href="home/css/style.css" rel="stylesheet" />
       <!-- responsive style -->
       <link href="home/css/responsive.css" rel="stylesheet" />
-      <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Cinzel&display=swap" rel="stylesheet">
+      <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Cormorant:wght@300&display=swap" rel="stylesheet">
 
       <style type="text/css">
 
@@ -39,6 +37,8 @@
         table,th,td
         {
             border: 1px solid black;
+            font-family: 'Cormorant', serif;
+            font-size: 30px;
         }
 
         .th_deg
@@ -47,6 +47,7 @@
             background-color: grey;
             font-size: 20px;
             font-weight: bold;
+            font-size: 40px;
             
         }
 

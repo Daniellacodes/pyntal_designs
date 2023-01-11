@@ -162,6 +162,7 @@ a:focus {
     transition: all 0.3s;
     font-weight: 700;
     font-family: 'Cormorant', serif;
+    font-size: 25px;
 }
 
 .custom_nav-container .navbar-nav .nav-item .nav-link svg {
@@ -585,6 +586,7 @@ a:focus {
     border-radius: 5px;
     color: #ffffff;
     font-family: 'Cormorant', serif;
+    font-size: 30px;
 }
 
 .detail-box h5 {
@@ -611,7 +613,8 @@ a:focus {
 }
 
 .subscribe_section .box {
-  background-color: #eee1bc;
+  background-color: transparent;
+
   padding: 75px 45px;
 }
 

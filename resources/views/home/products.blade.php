@@ -10,8 +10,8 @@
                <form action="{{url('product_search')}}" method="GET">
 
                @csrf
-                  <input style="width: 500px;" type="text" name="search" placeholder="Search for product">
-                  <input  style="background-color: black;border: 1px solid #f7e544;color: #ffffff;"  type="submit" value="search">
+                  <input style="font-size: 25px; font-family: 'Cormorant', serif; width: 500px;" type="text" name="search" placeholder="Search for product">
+                  <input  style="background-color: black;border: 1px solid #f7e544;color: #ffffff; font-family: 'Cormorant', serif;"  type="submit" value="search">
                </form>
                </div>
 
@@ -49,7 +49,7 @@
                         
                      
                   </div>
-                  <div class="detail-box">
+                  <div style="font-size: 25px; font-family: 'Cormorant', serif;" class="detail-box">
                         <h5>
                            {{$products->title}}
                         </h5>

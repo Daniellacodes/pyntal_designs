@@ -35,12 +35,12 @@
 
 
                <div class="carousel-inner">
-                  <div class="carousel-item active">
+                  <div  class="carousel-item active">
                      <img style="width: 2100px; height: 850px;" src="images/pyntal5.jpeg"  alt="">
-                     <div class="carousel-caption d-none d-md-block">
+                     <div style="font-size: 25px; font-family: 'Cormorant', serif; width: 500px;"  class="carousel-caption d-none d-md-block">
                         <div class="row" >
                            <div class="col-md-7 col-lg-6 ">
-                              <div class="detail-box">
+                              <div  class="detail-box">
                                  <h1>
                                     <span>
                                     With Pyntal
@@ -48,7 +48,7 @@
                                     <br>
                                     Designs
                                  </h1>
-                                 <p>
+                                 <p style="font-size: 30px;" >
                                     Designing your home has never been so fulfilling
                                  </p>
                                  <div class="btn-box">
@@ -98,7 +98,7 @@
                                     <br>
                                     On Everything
                                  </h1>
-                                 <p>
+                                 <p style="font-size: 30px;">
                                     Explicabo esse amet tempora quibusdam laudantium, laborum eaque magnam fugiat hic? Esse dicta aliquid error repudiandae earum suscipit fugiat molestias, veniam, vel architecto veritatis delectus repellat modi impedit sequi.
                                  </p>
                                  <div class="btn-box">
@@ -126,7 +126,7 @@
                                     <br>
                                     On Everything
                                  </h1>
-                                 <p>
+                                 <p style="font-size: 30px;">
                                     Explicabo esse amet tempora quibusdam laudantium, laborum eaque magnam fugiat hic? Esse dicta aliquid error repudiandae earum suscipit fugiat molestias, veniam, vel architecto veritatis delectus repellat modi impedit sequi.
                                  </p>
                                  <div class="btn-box">

@@ -16,7 +16,8 @@
                               </div>
                            </div>
                         </div>
-                        <div class="detail-box">
+                            
+                        <div style="font-size: 25px; font-family: 'Cormorant', serif; width: 500px;"  class="detail-box">
                            <h5>
                               Angel Lately
                            </h5>
@@ -34,11 +35,12 @@
                         <div class="img_container">
                            <div class="img-box">
                               <div class="img_box-inner">
-                                 <img src="images/murugi.jpg" alt="">
+                                 <img src="images/murugi.jpeg" alt="">
                               </div>
                            </div>
                         </div>
-                        <div class="detail-box">
+
+                        <div style="font-size: 25px; font-family: 'Cormorant', serif; width: 500px;"  class="detail-box">
                            <h5>
                               Murugi Munyi
                            </h5>
@@ -60,7 +62,8 @@
                               </div>
                            </div>
                         </div>
-                        <div class="detail-box">
+
+                        <div style="font-size: 25px; font-family: 'Cormorant', serif; width: 500px;"  class="detail-box">
                            <h5>
                               Anna Trevor
                            </h5>

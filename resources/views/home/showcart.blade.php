@@ -22,6 +22,8 @@
       <link href="home/css/style.css" rel="stylesheet" />
       <!-- responsive style -->
       <link href="home/css/responsive.css" rel="stylesheet" />
+      <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Cormorant:wght@300&display=swap" rel="stylesheet">
+
 
       
 
@@ -37,20 +39,24 @@
         table,th,td
         {
             border: 1px solid grey;
+            font-family: 'Cormorant', serif;
+            padding-left:50px;
+            font-size: 40px;
         }
 
         .th_deg
         {
             font-size: 30px;
             padding: 5px;
-            background: gold;
+            background: black;
+            color: white;
 
         }
 
         .img_deg
         {
-         height: 200px;
-         weight:200px;
+         height: 300px;
+         weight:300px;
         }
 
         .total_deg
@@ -102,7 +108,7 @@
             <td>{{$cart->quantity}}</td>
             <td>ksh{{$cart->price}}</td>
             <td><img class="img_deg" src="/product/{{$cart->image}}"></td>
-            <td><a class="btn btn-warning" onclick="confirmation(event)" href="{{url('/remove_cart',$cart->id)}}">Remove Product</a></td>
+            <td><a style="text-align: center; font-size: 25px;" class="btn btn-warning" onclick="confirmation(event)" href="{{url('/remove_cart',$cart->id)}}">Remove Product</a></td>
 
           </tr>
 
@@ -117,14 +123,14 @@
          </table>
 
          <div>
-            <h1 class="total_deg">Total price: ksh {{$totalprice}}</h1>
+            <h1 style="font-size: 30px;" class="total_deg">Total price: ksh {{$totalprice}}</h1>
   </div>
 
 
       <div>
-         <h1 style="font-size: 25px; padding-bottom: 15px;">Complete Order</h1>
-         <a href="{{url('stripe',$totalprice)}}" class="btn btn-danger">Pay using card</a>
-         <a href="{{url('/cash_order')}}" class="btn btn-danger">Cash on Delivery</a>
+         <h1  style="font-size: 40px; padding-bottom: 15px; font-weight: bold;">Complete Order</h1>
+         <a  style="background-color: black;border: 2px solid #f7e544;color: #ffffff;" href="{{url('stripe',$totalprice)}}" class="btn btn-danger">Pay using card</a>
+         <a style="background-color: black;border: 2px solid #f7e544;color: #ffffff;"  href="{{url('/cash_order')}}" class="btn btn-danger">Cash on Delivery</a>
       </div>
 
          
