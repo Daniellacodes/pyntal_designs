@@ -44,10 +44,7 @@
                      <div class="img-box">
                         <img src="product/{{$products->image}}" alt="">
                      </div>
-                     
 
-                        
-                     
                   </div>
                   <div class="detail-box">
                         <h5>

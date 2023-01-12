@@ -13,9 +13,9 @@
                        <li class="nav-item dropdown">
                            <a class="nav-link dropdown-toggle" href="#" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="true"> <span class="nav-label">Products<span class="caret"></span></a>
                            <ul class="dropdown-menu">
-                              <li><a href="indoor.html">Indoor</a></li>
-                              <li><a href="outdoor.html">Outdoor</a></li>
-                              <li><a href="Accessories.html">Accessories</a></li>
+                              <li><a href="{{url('')}}">Indoor</a></li>
+                              <li><a href="{{url('')}}">Outdoor</a></li>
+                              <li><a href="{{url('')}}">Accessories</a></li>
                            </ul>
                         </li>
                        
